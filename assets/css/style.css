@@ -1,0 +1,59 @@
+body{
+    background-image: url("../images/pokebg.jpg");
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 60px;
+    color: #ffcb05;
+    text-shadow: -3px -3px 0 #2c71b8,
+                 3px -3px 0 #2c71b8,
+                 -3px 3px 0 #2c71b8,
+                 3px 3px 0 #2c71b8;
+    letter-spacing: 5px;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container{
+    background-color: white;
+    opacity: .7;
+    height:150%;
+    width:75%;
+    padding: 40px;
+    text-align: center;
+}
+
+.item {
+    display: inline-block;
+    margin: 5px;
+}
+
+button {
+    font-family: 'Bangers',cursive;
+    letter-spacing: 2px;
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+p {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 20px;
+}
+#poke-form{
+    font-family: 'Amaranth', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: solid grey 2px;
+}
+
+h2 {
+    font-family: 'Bangers', cursive;
+    color: black;
+    letter-spacing: 2px;
+}
