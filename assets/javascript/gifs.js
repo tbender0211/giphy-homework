@@ -14,10 +14,12 @@ function createButtons(){
 createButtons();
 
 function pokeButtons(){
+
     $("button").on("click", function() {
 
         $("#display-gifs").empty();
         $("#gif-header").empty();
+        
 
         var pokemon = $(this).attr("data-poke");
 
@@ -56,8 +58,11 @@ function pokeButtons(){
                     var title = $("<p>").text(results[i].title);
 
                     var pokeImage = $("<img>");
+
+                    var favButton = $("<button class='" + results[i].id + "' id='favorites'>Add to Favorites</button>");
             
                     pokeImage.attr("src", results[i].images.fixed_height_still.url);
+                    gifDiv.attr("id", results[i].id);
 
                     pokeImage.attr("data-state", "still");
                     pokeImage.attr("data-still", results[i].images.fixed_height.url);
@@ -67,17 +72,34 @@ function pokeButtons(){
                     gifDiv.append(pokeImage);
                     gifDiv.append(title);
                     gifDiv.append(p);
+                    gifDiv.append(favButton);
                     
-
+                    
             
                     $("#display-gifs").prepend(gifDiv);
-          }
+
+
+                }
+
+                function favorites(){
+
+                    var idNum = results[i].id;
+
+                    $("."+ idNum).on("click", function(){
+                        $("#" + idNum).appendTo("#added");
+                        favButton.attr()
+                
+                    }
+                )}
+
+            favorites();
         }
       });
   });
 }
 
 pokeButtons();
+
 
   $("#find-poke").on("click", function(event) {
 
@@ -86,13 +108,7 @@ pokeButtons();
 
    
     var pokemon = $("#poke-input").val().trim();
-
     
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      pokemon + "&api_key=2Ztx15epIi1iPP4JJ5ihnfwdoCxy0U0U&limit=10";
-
-   
-
 
     $.ajax({
       url: queryURL,

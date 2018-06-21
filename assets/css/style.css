@@ -21,8 +21,8 @@ h1 {
 .container{
     background-color: white;
     opacity: .7;
-    height:150%;
-    width:75%;
+    height:250%;
+    width:80%;
     padding: 40px;
     text-align: center;
 }
@@ -56,4 +56,20 @@ h2 {
     font-family: 'Bangers', cursive;
     color: black;
     letter-spacing: 2px;
+}
+
+#favorites {
+    font-size: 10px;
+    font-family: 'Amaranth', sans-serif;
+}
+
+#favorites-added{
+    border: solid 2px black;
+    padding: 10px;
+}
+
+#gifs-added{
+    border: solid 2px black;
+    padding: 10px;
+    margin-right: 70px;
 }
