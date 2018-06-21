@@ -87,7 +87,7 @@ function pokeButtons(){
 
                     $("."+ idNum).on("click", function(){
                         $("#" + idNum).appendTo("#added");
-                        favButton.attr()
+                        $(this).hide();
                 
                     }
                 )}
