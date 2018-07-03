@@ -73,3 +73,8 @@ h2 {
     padding: 10px;
     margin-right: 70px;
 }
+
+#clear {
+    font-size: 10px;
+    font-family: 'Amaranth', sans-serif;
+}
